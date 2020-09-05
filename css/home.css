@@ -1,0 +1,148 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#topNav {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slider {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 95%;
+}
+
+#midContent {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#sideNav {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  margin-top: 15px;
+}
+
+#mainContent {
+  width: 80%;
+  height: auto;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#newReleases {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Kurale', serif;
+}
+
+#carousel {
+  width: 100%;
+  height: auto;
+  float: left;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#ind_entity {
+  width: 160px;
+  height: auto;
+  float: left;
+  padding: 10px;
+  font-family: 'Kurale', serif;
+}
+
+#editorsPicks{
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  font-family: 'Kurale', serif;
+  border: 1px;
+  border-color: #e4e3e9
+  border-radius: 5px;
+}
+
+#mid{
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 530px;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: 'Kurale', serif;
+}
+
+#auth_month{
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-top: 10px;
+  font-family: 'Kurale', serif;
+}
+
+#advert {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#authors {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: 'Kurale', serif;
+}
+
+#linkSection {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  font-family: 'Kurale', serif;
+  color: white;
+  background-color: #232323;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#end {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Kurale', serif;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+}
+
+
+h4 {
+  font-family: 'Fredericka the Great', cursive;
+}

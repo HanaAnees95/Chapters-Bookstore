@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Chapters - My Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/cart.css" />
+    <link type="text/css" rel="stylesheet" href="css/googlepay.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kurale" rel="stylesheet">
+</head>
+<body>
+  <div id=topNav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="Home.php" style="font-family: 'Fredericka the Great', cursive; font-size: 27px;">Chapters Bookstore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Collection.html">Our Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Privacy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Terms.html">Terms Of Service</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Cart.html">My Cart(3)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+  <div id=midContent class="row no-gutters">
+    <br />
+    <div style="width: 100%; height: auto; border-bottom: 1px solid; padding-bottom: 5px;">
+      <div style="float: left;"><h2 style="padding-left: 20px;">CART</h2></div>
+      <div style="float: right; padding-right: 20px;"><button type="button" class="btn btn-outline-secondary" href="Collection.php">Go Back To Collection &rarr;</button></div>
+    </div>
+    <div id=cartDetails class="col-12 col-sm-6 col-md-8">
+      <h4 style="padding-left: 20px;">Cart Items</h4>
+      <hr />
+      <form action="" method="post" enctype="multipart/form-data">
+
+        <table>
+          <tr>
+            <td style='width: 15px;'></td>
+            <td>
+              <img src='images/books-sm/killa.jpeg' width='120'/>
+            </td>
+            <td style='width: 15px;'></td>
+            <td>
+              <b><p style='font-size: 16px;'>To Kill a Mockingbird</p></b>
+              <p style='font-size: 16px;'>$ 8.61</p>
+              <p>Quantity</p>
+              <table>
+                <tr>
+                  <td><input class='form-control' style='width: 100px;' name='book_qty' placeholder='1' type='number'></td>
+                  <td style='width: 25px;'></td>
+                  <td><button type='submit' class='btn btn-link'  name='remove_product' value='978-0-44631-078-9' style=' text-decoration: none; font-size: 15px; color: red; text-transform: none;'><u>Remove</u></button></td>
+                  <td style='width: 25px;'></td>
+                  <td><button type='submit' class='btn btn-link' name='update_cart'  value='978-0-44631-078-9' style='text-decoration: none; font-size: 15px; color: black;  text-transform: none;'><u>Update Cart</u></button></td>
+                  <td style='width: 25px;'></td>
+                </tr>
+              </table>
+            </td>
+            <td style='width: 15px;'></td>
+          </tr>
+        </table>
+        <hr />
+
+        <table>
+          <tr>
+            <td style='width: 15px;'></td>
+            <td>
+              <img src='images/books-sm/agentlemen.jpg' width='120'/>
+            </td>
+            <td style='width: 15px;'></td>
+            <td>
+              <b><p style='font-size: 16px;'>Gentleman in Moscow</p></b>
+              <p style='font-size: 16px;'>$ 14.85</p>
+              <p>Quantity</p>
+              <table>
+                <tr>
+                  <td><input class='form-control' style='width: 100px;' name='book_qty' placeholder='1' type='number'></td>
+                  <td style='width: 25px;'></td>
+                  <td><button type='submit' class='btn btn-link'  name='remove_product' value='978-0-67002-619-7' style=' text-decoration: none; font-size: 15px; color: red; text-transform: none;'><u>Remove</u></button></td>
+                  <td style='width: 25px;'></td>
+                  <td><button type='submit' class='btn btn-link' name='update_cart'  value='978-0-67002-619-7' style='text-decoration: none; font-size: 15px; color: black;  text-transform: none;'><u>Update Cart</u></button></td>
+                  <td style='width: 25px;'></td>
+                </tr>
+              </table>
+            </td>
+            <td style='width: 15px;'></td>
+          </tr>
+        </table>
+        <hr />
+
+        <table>
+          <tr>
+            <td style='width: 15px;'></td>
+            <td>
+              <img src='images/books-sm/origin.jpg' width='120'/>
+            </td>
+            <td style='width: 15px;'></td>
+            <td>
+              <b><p style='font-size: 16px;'>Origin</p></b>
+              <p style='font-size: 16px;'>$ 18.86</p>
+              <p>Quantity</p>
+              <table>
+                <tr>
+                  <td><input class='form-control' style='width: 100px;' name='book_qty' placeholder='1' type='number'></td>
+                  <td style='width: 25px;'></td>
+                  <td><button type='submit' class='btn btn-link'  name='remove_product' value='978-0-73931-926-0' style=' text-decoration: none; font-size: 15px; color: red; text-transform: none;'><u>Remove</u></button></td>
+                  <td style='width: 25px;'></td>
+                  <td><button type='submit' class='btn btn-link' name='update_cart'  value='978-0-73931-926-0' style='text-decoration: none; font-size: 15px; color: black;  text-transform: none;'><u>Update Cart</u></button></td>
+                  <td style='width: 25px;'></td>
+                </tr>
+              </table>
+            </td>
+            <td style='width: 15px;'></td>
+          </tr>
+        </table>
+        <hr />
+            </form>
+    </div>
+    <div id=cartTotal class="col-6 col-md-4">
+      <h4>Sub Total</h4>
+      <hr />
+      <table style="font-family: 'Kurale', serif;">
+        <tr><td style="font-size: 28px;"><b>$ 42.32</b></td></tr>
+        <tr><td>Excluding Tax & Shipping</td></tr>
+        <tr style="height: 15px;"></tr>
+        <tr><td>All Orders Will Be Processed In USD</td></tr>
+        <tr style="height: 45px;"></tr>
+        <tr><td>How Did You Hear About Chapters Bookstore?</td></tr>
+        <tr style="height: 5px;"></tr>
+        <tr>
+          <td>
+            <div class="form-group">
+              <select class="form-control" id="exampleSelect1">
+                <option>Please Make A Selection</option>
+                <option>Advertisment</option>
+                <option>Search Engine</option>
+                <option>A Friend</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr style="height: 30px;"></tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-outline-primary btn-lg btn-block" style="width: 335px; height: 50px; font-size: 14px;">Proceed To Checkout</button>
+          </td>
+        </tr>
+        <tr style="height: 50px;"></tr>
+        <tr>
+          <td>
+            <div>
+              <div style="width: 160px; height: 40px; border-radius: 5px; float: left; background-color: #f3ba37;"><a href="" style=""><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal" style="padding-left: 30px; padding-top: 7px;"  /></a></div>
+              <div style="float: left; margin-left: 15px;"><button class="googlepay" title="Google Pay"></button></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id=linkSection>
+    <div class="row">
+      <div class="col-sm">
+        <br />
+        Customer Service
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">Contact</a></li>
+          <li><a href="">My Account</a></li>
+          <li><a href="">Frequently Asked Questions</a></li>
+          <li><a href="">Shipping and Returns</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Book Categories
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">New Releases</a></li>
+          <li><a href="">Top Trending</a></li>
+          <li><a href="">Best Sellers</a></li>
+          <li><a href="">Shipping and Returns</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Follow Us On
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Youtube</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Chapters Bookstore
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">Based in Colombo, Sri Lanka</a></li>
+          <li><a href="">contact@chaptersbookstore.com</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Join Our Mailing List
+        <br /><br />
+        <div class="row">
+          <div class="col-6 col-sm-3">
+            <form>
+              <div class="form-group">
+                <input type="email" style="width: 200px;" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+                <button type="button" style="width: 200px; margin-top: 5px; font-size: 14px; text-transform: none;" class="btn btn-outline-success">Sign Up</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+
+          <div class="col-6 col-sm-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id=end>
+    <div class="row">
+      <div class="col-sm" style="margin-top: 5px;">&copy Copyright 2018 Chapters Bookstore</div>
+      <div class="col-sm" style="margin-top: 5px;">
+        <a style="color: black; text-decoration: none;" href="Terms.php">Terms Of Service</a> |
+        <a style="color: black; text-decoration: none;"  href="Privacy.php">Privacy</a> |
+        <a style="color: black; text-decoration: none;"  href="Shipping.php">Shipping and Returns</a>
+      </div>
+      <div class="col-sm" style="margin-top: 5px;">
+        <a href="Cart.php">
+          <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png" class="img-fluid" width="300" alt="Pay with PayPal, PayPal Credit or any major credit card" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

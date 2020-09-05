@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<?php include("functions/functions.php"); ?>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Chapters - Register</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kurale" rel="stylesheet">
+</head>
+<body>
+  <div id=topNav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="Home.php" style="font-family: 'Fredericka the Great', cursive; font-size: 27px;">Chapters Bookstore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Collection.html">Our Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Privacy.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Terms.html">Terms Of Service</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Cart.html">My Cart(3)</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+  <div id=midContent>
+    <h3 style="padding-left: 10px;">User Registration</h3>
+    <hr />
+    <div id=userDetails>
+      <form action="Register.php" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstName">First Name</label>
+            <input class="form-control" id="firstName" name="firstName" placeholder="Enter email" type="text">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" id="lastName" name="lastName" placeholder="Enter email" type="text">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email">Email Address</label>
+            <input class="form-control" id="email" name="email" placeholder="Enter Email" type="email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phone">Phone</label>
+            <input class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" type="text">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="username">Username</label>
+            <input class="form-control" id="username" name="username" placeholder="Enter Username" type="text">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Enter Residential Address">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="country">Country</label>
+            <select class="form-control" id="country">
+              <option value="AF">Afghanistan</option>
+            	<option value="AX">Åland Islands</option>
+            	<option value="AL">Albania</option>
+            	<option value="DZ">Algeria</option>
+            	<option value="AS">American Samoa</option>
+            	<option value="AD">Andorra</option>
+            	<option value="AO">Angola</option>
+            	<option value="AI">Anguilla</option>
+            	<option value="AR">Argentina</option>
+            	<option value="AM">Armenia</option>
+            	<option value="AW">Aruba</option>
+            	<option value="AU">Australia</option>
+            	<option value="AT">Austria</option>
+            	<option value="AZ">Azerbaijan</option>
+            	<option value="BS">Bahamas</option>
+            	<option value="BH">Bahrain</option>
+            	<option value="BD">Bangladesh</option>
+            	<option value="BB">Barbados</option>
+            	<option value="BY">Belarus</option>
+            	<option value="BE">Belgium</option>
+            	<option value="BZ">Belize</option>
+            	<option value="BJ">Benin</option>
+            	<option value="BM">Bermuda</option>
+            	<option value="BT">Bhutan</option>
+            	<option value="BW">Botswana</option>
+            	<option value="BR">Brazil</option>
+            	<option value="BG">Bulgaria</option>
+            	<option value="BF">Burkina Faso</option>
+            	<option value="BI">Burundi</option>
+            	<option value="KH">Cambodia</option>
+            	<option value="CM">Cameroon</option>
+            	<option value="CA">Canada</option>
+            	<option value="CV">Cape Verde</option>
+            	<option value="KY">Cayman Islands</option>
+            	<option value="TD">Chad</option>
+            	<option value="CL">Chile</option>
+            	<option value="CN">China</option>
+            	<option value="CO">Colombia</option>
+            	<option value="KM">Comoros</option>
+            	<option value="CG">Congo</option>
+            	<option value="CK">Cook Islands</option>
+            	<option value="CR">Costa Rica</option>
+            	<option value="CI">Côte d'Ivoire</option>
+            	<option value="HR">Croatia</option>
+            	<option value="CU">Cuba</option>
+            	<option value="CW">Curaçao</option>
+            	<option value="CY">Cyprus</option>
+            	<option value="CZ">Czech Republic</option>
+            	<option value="DK">Denmark</option>
+            	<option value="DJ">Djibouti</option>
+            	<option value="DM">Dominica</option>
+            	<option value="DO">Dominican Republic</option>
+            	<option value="EC">Ecuador</option>
+            	<option value="EG">Egypt</option>
+            	<option value="SV">El Salvador</option>
+            	<option value="GQ">Equatorial Guinea</option>
+            	<option value="ER">Eritrea</option>
+            	<option value="EE">Estonia</option>
+            	<option value="ET">Ethiopia</option>
+            	<option value="FO">Faroe Islands</option>
+            	<option value="FJ">Fiji</option>
+            	<option value="FI">Finland</option>
+            	<option value="FR">France</option>
+            	<option value="GA">Gabon</option>
+            	<option value="GM">Gambia</option>
+            	<option value="GE">Georgia</option>
+            	<option value="DE">Germany</option>
+            	<option value="GH">Ghana</option>
+            	<option value="GI">Gibraltar</option>
+            	<option value="GR">Greece</option>
+            	<option value="GL">Greenland</option>
+            	<option value="GD">Grenada</option>
+            	<option value="GP">Guadeloupe</option>
+            	<option value="GU">Guam</option>
+            	<option value="GT">Guatemala</option>
+            	<option value="GG">Guernsey</option>
+            	<option value="GN">Guinea</option>
+            	<option value="GW">Guinea-Bissau</option>
+            	<option value="GY">Guyana</option>
+            	<option value="HT">Haiti</option>
+            	<option value="HN">Honduras</option>
+            	<option value="HK">Hong Kong</option>
+            	<option value="HU">Hungary</option>
+            	<option value="IS">Iceland</option>
+            	<option value="IN">India</option>
+            	<option value="ID">Indonesia</option>
+            	<option value="IR">Iran</option>
+            	<option value="IQ">Iraq</option>
+            	<option value="IE">Ireland</option>
+            	<option value="IM">Isle of Man</option>
+            	<option value="IL">Israel</option>
+            	<option value="IT">Italy</option>
+            	<option value="JM">Jamaica</option>
+            	<option value="JP">Japan</option>
+            	<option value="JE">Jersey</option>
+            	<option value="JO">Jordan</option>
+            	<option value="KZ">Kazakhstan</option>
+            	<option value="KE">Kenya</option>
+            	<option value="KI">Kiribati</option>
+            	<option value="KW">Kuwait</option>
+            	<option value="KG">Kyrgyzstan</option>
+            	<option value="LV">Latvia</option>
+            	<option value="LB">Lebanon</option>
+            	<option value="LS">Lesotho</option>
+            	<option value="LR">Liberia</option>
+            	<option value="LY">Libya</option>
+            	<option value="LI">Liechtenstein</option>
+            	<option value="LT">Lithuania</option>
+            	<option value="LU">Luxembourg</option>
+            	<option value="MO">Macao</option>
+            	<option value="MG">Madagascar</option>
+            	<option value="MW">Malawi</option>
+            	<option value="MY">Malaysia</option>
+            	<option value="MV">Maldives</option>
+            	<option value="ML">Mali</option>
+            	<option value="MT">Malta</option>
+            	<option value="MH">Marshall Islands</option>
+            	<option value="MQ">Martinique</option>
+            	<option value="MR">Mauritania</option>
+            	<option value="MU">Mauritius</option>
+            	<option value="YT">Mayotte</option>
+            	<option value="MX">Mexico</option>
+            	<option value="MC">Monaco</option>
+            	<option value="MN">Mongolia</option>
+            	<option value="ME">Montenegro</option>
+            	<option value="MS">Montserrat</option>
+            	<option value="MA">Morocco</option>
+            	<option value="MZ">Mozambique</option>
+            	<option value="MM">Myanmar</option>
+            	<option value="NA">Namibia</option>
+            	<option value="NR">Nauru</option>
+            	<option value="NP">Nepal</option>
+            	<option value="NL">Netherlands</option>
+            	<option value="NC">New Caledonia</option>
+            	<option value="NZ">New Zealand</option>
+            	<option value="NI">Nicaragua</option>
+            	<option value="NE">Niger</option>
+            	<option value="NG">Nigeria</option>
+            	<option value="NU">Niue</option>
+            	<option value="NF">Norfolk Island</option>
+            	<option value="NO">Norway</option>
+            	<option value="OM">Oman</option>
+            	<option value="PK">Pakistan</option>
+            	<option value="PY">Paraguay</option>
+            	<option value="PE">Peru</option>
+            	<option value="PH">Philippines</option>
+            	<option value="PN">Pitcairn</option>
+            	<option value="PL">Poland</option>
+            	<option value="PT">Portugal</option>
+            	<option value="PR">Puerto Rico</option>
+            	<option value="QA">Qatar</option>
+            	<option value="RO">Romania</option>
+            	<option value="RU">Russia</option>
+            	<option value="WS">Samoa</option>
+            	<option value="SA">Saudi Arabia</option>
+            	<option value="SN">Senegal</option>
+            	<option value="RS">Serbia</option>
+            	<option value="SC">Seychelles</option>
+            	<option value="SL">Sierra Leone</option>
+            	<option value="SG">Singapore</option>
+            	<option value="SK">Slovakia</option>
+            	<option value="SI">Slovenia</option>
+            	<option value="ZA">South Africa</option>
+            	<option value="SS">South Sudan</option>
+            	<option value="ES">Spain</option>
+            	<option value="LK">Sri Lanka</option>
+            	<option value="SZ">Swaziland</option>
+            	<option value="SE">Sweden</option>
+            	<option value="CH">Switzerland</option>
+            	<option value="TW">Taiwan</option>
+            	<option value="TH">Thailand</option>
+            	<option value="TN">Tunisia</option>
+            	<option value="TR">Turkey</option>
+            	<option value="TV">Tuvalu</option>
+            	<option value="UG">Uganda</option>
+            	<option value="UA">Ukraine</option>
+            	<option value="AE">United Arab Emirates</option>
+            	<option value="GB">United Kingdom</option>
+            	<option value="US">United States</option>
+            	<option value="YE">Yemen</option>
+            	<option value="ZM">Zambia</option>
+            	<option value="ZW">Zimbabwe</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="city">City</label>
+            <input type="text" class="form-control" placeholder="Enter City" id="inputCity" name="city">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="Enter ZIP">
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+              <label class="form-check-label" for="autoSizingCheck2"></label>
+            </div>
+          </div>
+          <div class="col-auto my-1">
+            <button type="button" class="btn btn-link" style="font-size: 14px; text-transform: none; color: #385b81;" data-toggle="modal" data-target="#exampleModal">
+              Agree to Terms and Conditions
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        <button type="submit" class="btn btn-secondary btn-lg">Cancel</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Terms & Conditions</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="font-family: 'Kurale', serif; font-size: 14px;">
+                <p style="color: #385b81;"><u>1. Introduction</u></p>
+                <p>
+                  These Website Standard Terms And Conditions (these “Terms” or these “Website Standard Terms And Conditions”)
+                  contained herein on this webpage, shall govern your use of this website, including all pages within this website
+                  (collectively referred to herein below as this “Website”). These Terms apply in full force and effect to your use
+                  of this Website and by using this Website, you expressly accept all terms and conditions contained herein in full.
+                  You must not use this Website, if you have any objection to any of these Website Standard Terms And Conditions.
+                </p>
+                <p style="color: #385b81;"><u>2. Intellectual Property Rights.</U></p>
+                <p>
+                  Other than content you own, which you may have opted to include on this Website, under these Terms, Chapters Bookstore
+                  and/or its licensors own all rights to the intellectual property and material contained in this Website, and all such
+                  rights are reserved.
+                  <p>
+                    You are granted a limited license only, subject to the restrictions provided in these Terms, for purposes of viewing the
+                    material contained on this Website.
+                  </p>
+                </P>
+                <p style="color: #385b81;"><u>3. Restrictions</u></p>
+                <p>
+                  You are expressly and emphatically restricted from all of the following:
+
+                    <ol start="1">
+                     <li>Publishing any Website material in any media;</li>
+                     <li>Selling, sublicensing and/or otherwise commercializing any Website material;</li>
+                     <li>Publicly performing and/or showing any Website material;</li>
+                     <li>Using this Website in any way that is, or may be, damaging to this Website;</li>
+                     <li>Using this Website in any way that impacts user access to this Website;</li>
+                     <li>
+                       Using this Website contrary to applicable laws and regulations, or in a way that causes, or may cause, harm to the
+                       Website, or to any person or business entity;
+                     </li>
+                     <li>
+                       Engaging in any data mining, data harvesting, data extracting or any other similar activity in relation to this Website,
+                       or while using this Website;
+                     </li>
+                     <li>Using this Website to engage in any advertising or marketing;</li>
+                    </ol>
+
+                    Certain areas of this Website are restricted from access by you and Chapters Bookstore may further restrict access by you to any
+                    areas of this Website, at any time, in its sole and absolute discretion.  Any user ID and password you may have for this Website
+                    are confidential and you must maintain confidentiality of such information.
+                </p>
+                <p style="color: #385b81;"><u>4. Your Content</u></p>
+                <p>
+                  In these Website Standard Terms And Conditions, “Your Content” shall mean any audio, video, text, images or other material you choose
+                  to display on this Website. With respect to Your Content, by displaying it, you grant Chapters Bookstore a non-exclusive, worldwide,
+                  irrevocable, royalty-free, sublicensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.
+
+                  <p>
+                    Your Content must be your own and must not be infringing on any third party’s rights. Chapters Bookstore reserves the right to
+                    remove any of Your Content from this Website at any time, and for any reason, without notice.
+                  </p>
+                </p>
+                <p style="color: #385b81;"><u>5. No Warranties</u></p>
+                <p>
+                  This Website is provided “as is,” with all faults, and Chapters Bookstore makes no express or implied representations or warranties, of
+                  any kind related to this Website or the materials contained on this Website. Additionally, nothing contained on this Website shall
+                  be construed as providing consult or advice to you.
+                </p>
+                <p style="color: #385b81;"><u>6. Limitation of liability.</u></p>
+                <p>
+                  In no event shall Chapters Bookstore, nor any of its officers, directors and employees, be liable to you for anything arising out of
+                  or in any way connected with your use of this Website, whether such liability is under contract, tort or otherwise, and Chapters Bookstore,
+                  including its officers, directors and employees shall not be liable for any indirect, consequential or special liability arising out
+                  of or in any way related to your use of this Website.
+                </p>
+                <p style="color: #385b81;"><u>7. Entire Agreement.</u></p>
+                <p>
+                  These Terms, including any legal notices and disclaimers contained on this Website, constitute the entire agreement between Chapters
+                  Bookstore and you in relation to your use of this Website, and supersede all prior agreements and understandings with respect to the same.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">I Accept</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id=linkSection>
+    <div class="row">
+      <div class="col-sm">
+        <br />
+        Customer Service
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">Contact</a></li>
+          <li><a href="">My Account</a></li>
+          <li><a href="">Frequently Asked Questions</a></li>
+          <li><a href="">Shipping and Returns</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Book Categories
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">New Releases</a></li>
+          <li><a href="">Top Trending</a></li>
+          <li><a href="">Best Sellers</a></li>
+          <li><a href="">Shipping and Returns</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Follow Us On
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Youtube</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Chapters Bookstore
+        <br /><br />
+        <ul style="list-style: none; margin: 0; padding: 0;">
+          <li><a href="">Based in Colombo, Sri Lanka</a></li>
+          <li><a href="">contact@chaptersbookstore.com</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm">
+        <br />
+        Join Our Mailing List
+        <br /><br />
+        <div class="row">
+          <div class="col-6 col-sm-3">
+            <form>
+              <div class="form-group">
+                <input type="email" style="width: 200px;" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+                <button type="button" style="width: 200px; margin-top: 5px; font-size: 14px; text-transform: none;" class="btn btn-outline-success">Sign Up</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Force next columns to break to new line -->
+          <div class="w-100"></div>
+
+          <div class="col-6 col-sm-3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id=end>
+    <div class="row">
+      <div class="col-sm" style="margin-top: 5px;">&copy Copyright 2018 Chapters Bookstore</div>
+      <div class="col-sm" style="margin-top: 5px;">
+        <a style="color: black; text-decoration: none;" href="Terms.php">Terms Of Service</a> |
+        <a style="color: black; text-decoration: none;"  href="Privacy.php">Privacy</a> |
+        <a style="color: black; text-decoration: none;"  href="Shipping.php">Shipping and Returns</a>
+      </div>
+      <div class="col-sm" style="margin-top: 5px;">
+        <a href="Cart.php">
+          <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png" class="img-fluid" width="300" alt="Pay with PayPal, PayPal Credit or any major credit card" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

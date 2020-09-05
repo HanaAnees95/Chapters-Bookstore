@@ -1,0 +1,62 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#topNav {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#midContent {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#linkSection {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  font-family: 'Kurale', serif;
+  color: white;
+  background-color: #232323;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#end {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Kurale', serif;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Fredericka the Great', cursive;
+  color: #ff6a00;
+}
+
+p {
+  font-family: 'Kurale', serif;
+  font-size: 16px;
+}

@@ -1,0 +1,64 @@
+#topNav {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#midContent{
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+#bookImage{
+  width: 450px
+  height: 450px;
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}
+
+#bookdetails{
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}
+
+#linkSection {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  font-family: 'Kurale', serif;
+  color: white;
+  background-color: #232323;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#end {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Kurale', serif;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+h5 {
+  font-family: 'Kurale', serif;
+  font-size: 55px;
+}
+
+p {
+  font-family: 'Kurale', serif;
+  font-size: 16px;
+}
